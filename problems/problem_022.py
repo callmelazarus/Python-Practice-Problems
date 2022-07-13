@@ -8,3 +8,19 @@
 
 def gear_for_day(is_workday, is_sunny):
     pass
+
+
+
+
+
+# * [ ] Vocab
+# * [ ] Functions
+# * [ ] Methods
+
+# ## Problem decomposition
+
+# * [ ] Input
+# * [ ] Output
+# * [ ] Examples
+# * [ ] Conditions (if)
+# * [ ] Iteration (loop)
