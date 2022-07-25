@@ -9,10 +9,10 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
-def can_skydive(age, has_consent_form):
-    if has_consent_form == 'yes':
-        return True
 
+def can_skydive(age, has_consent_form):
+    if has_consent_form == "yes":
+        return True
 
 
 # two arguments to pass

@@ -27,3 +27,5 @@ list1 = ["bob", "jay", "joy"]
 list2 = ["mark", "fred", "joey"]
 
 print(has_quorum(list1, list2))
+
+# solved
