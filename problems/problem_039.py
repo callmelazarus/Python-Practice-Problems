@@ -13,4 +13,25 @@
 #     output: {1: "one", 2: "two", 3: "three"}
 
 def reverse_dictionary(dictionary):
-    pass
+    dict_soln = {}
+    for key, value in dictionary.items():
+        dict_soln[value] = key
+    return dict_soln
+
+
+dict = {"one": 1, "two": 2, "three": 3}
+
+dict2 = {"key": "value"}
+
+print(reverse_dictionary(dict2))
+
+
+# input -> dictionary
+
+# create an empty dictionary solution
+
+# Loop thru the input dict, and assign the key, to the value of solution dictionary
+
+# same thing but vice versa for the value
+
+# outpu -> swaps the keys and values for these dictionaries

@@ -21,4 +21,71 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+    soln = []
+    for item in csv_lines:
+        item_into_list = item.split(",")
+        rev_list = []
+        for item in item_into_list:
+            conv_num = int(item)
+            rev_list.append(conv_num)
+        summed_item = sum(rev_list)
+        soln.append(summed_item)
+    return soln
+
+
+string= ["8,1,7", "10,10,10", "1,2,3"]
+list = "10,10,10"
+
+
+print(add_csv_lines(string))
+
+# input -> lists, each item in list is a list of comma, seperated string of numbers
+
+# create empty solution list
+
+# loop thru each item in list
+
+# within an item -> split the item based on "," -> creates a list of numbers
+
+# sum the list and return to the empty solution list
+
+# return solution list
+
+
+# output -> summation of the items in the list
+
+
+
+
+
+# solution 1 -> works only for single strings... let's use split!!!
+def add_csv_lines_alt(csv_lines):
+    soln = []
+    for item in csv_lines:
+        list_of_string = []
+        for char in item:
+            if char.isdigit():
+                list_of_string.append(int(char))
+                summed_list = sum(list_of_string)
+        soln.append(summed_list)
+    print(soln)
+
+
+
+
+
+# add_csv_lines(string)
+
+
+# input -> lists, each item in list is a list of comma, seperated string of numbers
+    
+# create empty solution list
+# loop thru list
+# inspect one item of the list
+# find a way to add up these numbers
+            # lets break this problem up more
+# return that sum to the solution list
+
+# output -> summation of the items in the list
+
+
