@@ -20,4 +20,26 @@
 # Look up the enumerate function to help you with this problem.
 
 def find_indexes(search_list, search_term):
-    pass
+    dictionary = dict(enumerate(search_list))
+    soln = []
+    for key, value in dictionary.items():
+        if search_term == value:
+            soln.append(key)
+        continue
+    return soln
+
+search_list =  [1, 2, 3, 4, 5]
+search_term =  4
+
+print(find_indexes(search_list, search_term))
+
+
+# input -> list, and searched for number
+
+# use enumerate function -> can convert to a dictionary or list
+
+# using that dictionary -> the key, would be the iteration/index, and the value would be the serached item
+
+# need to return the key, associated with the value
+
+# returns list -> index of search term
