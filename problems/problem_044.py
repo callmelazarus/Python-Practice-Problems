@@ -18,4 +18,42 @@
 # Remember that a dictionary has the ".get" method on it.
 
 def translate(key_list, dictionary):
-    pass
+    soln = []
+    for description in key_list:
+        value = dictionary.get(description)
+        soln.append(value)
+    return soln
+
+keys=      ["eye color", "age"]
+dictionary= {"name": "Noor", "age": 29}
+
+print(translate(keys, dictionary))
+
+# loop thru keyes
+
+# get wil reutrn None if key doesn't exist
+
+# simply add .get the value
+
+
+
+
+
+
+# input -> list of keys, and dictionary
+
+# loop thru keys to receive description
+
+# loop thru key: value pairs
+
+# if description matches key -> inser value into solution -> exit loop
+
+# access value of a specific key
+
+# that key may not always exist
+
+
+
+# output -> list containing corresponding values to corresponding keys. if key does not exist, should return none
+# list
+# lenght matches length of keys
