@@ -37,23 +37,6 @@ print(translate(keys, dictionary))
 
 
 
-
-
-
-# input -> list of keys, and dictionary
-
-# loop thru keys to receive description
-
-# loop thru key: value pairs
-
-# if description matches key -> inser value into solution -> exit loop
-
-# access value of a specific key
-
-# that key may not always exist
-
-
-
 # output -> list containing corresponding values to corresponding keys. if key does not exist, should return none
 # list
 # lenght matches length of keys

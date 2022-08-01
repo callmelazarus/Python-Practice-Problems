@@ -29,3 +29,9 @@
 
 def make_sentences(subjects, verbs, objects):
     pass
+
+# input - 3 lists
+
+
+
+# output - lists
