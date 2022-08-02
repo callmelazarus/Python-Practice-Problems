@@ -40,7 +40,7 @@ fruit1 = ['a','p','p','l','e']
 
 fruit1.reverse()
 
-print(fruit1
+print(fruit1)
 
 
 # use if statement to check if og work == reverse word

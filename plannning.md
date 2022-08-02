@@ -25,3 +25,6 @@ Add plans...
 ### 06 can_skydive
 
 ### continue to plan each
+
+# way to test file
+python -m pytest -k "001"

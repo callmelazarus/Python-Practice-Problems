@@ -28,10 +28,33 @@
 # at the last one you just wrote unless you really must.
 
 def make_sentences(subjects, verbs, objects):
-    pass
+    total_string = []
+    for subject in subjects:
+        for verb in verbs:
+            for thing in objects:
+                string = subject + " " + verb + " " + thing
+                total_string.append(string)
+    return total_string
+
+subjects= ["I", "You"]
+verbs=    ["play", "watch"]
+objects=  ["Portal", "Sable"]
+
+print(make_sentences(subjects, verbs, objects))
 
 # input - 3 lists
 
+# need to be systemeatic about this
+
+# solution list -> holds all the string cobminations
+
+# stay fixed on the first two indexes, and than loop thru third
+
+# fix the first index, step the 2nd index, and loop thru third
+
+# step the first index, start with the first index, loop thru third
+
+# keep the stepped first index, step the 2nd index, loop the third
 
 
-# output - lists
+# output - lists that combine all iterations of three lists
