@@ -34,8 +34,6 @@ def check_password(password):
         return True # password ok
     else:
         return False
-    
-            
 
 
 password = "A0z!ac"
