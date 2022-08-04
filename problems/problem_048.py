@@ -39,3 +39,13 @@ def count_word_frequencies(sentence):
 sentence="I came I saw I learned"
 
 print(count_word_frequencies(sentence))
+
+
+emptdic = {
+    "test":"value1",
+ "test": "value2"
+ }
+
+# print(emptdic.get("test"))
+
+print(emptdic)
