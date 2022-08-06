@@ -27,4 +27,11 @@
 #       returns: "IX"
 #     * input: 10
 #       returns:  "X"
+"""
+returns the roman number associated with the input
 
+"""
+
+def simple_roman(num):
+    roman_num = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+    return roman_num[num-1]
