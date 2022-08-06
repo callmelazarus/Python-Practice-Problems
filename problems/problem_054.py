@@ -14,4 +14,18 @@
 #      returns: "this is a string"
 #    * input:   "raise"
 #      RAISES:  ValueError
+"""
+
+return -> ValueError if the input is string "raise"
+otherwise - just reutrn the parameter
+
+"""
+
+
+def check_input(input):
+    if input == "raise":
+        raise ValueError
+    else:
+        return input
+
 
