@@ -13,5 +13,27 @@
 #    * input:   "basia.farid@yahoo.com"
 #      returns: "basia.farid"
 #    * input:   "basia_farid+test@yahoo.com"
-#      returns: "basia_farid+test"
+#      returns: "basia_farid+test
 
+"""
+input -> valid email address as string
+
+output -> address before the @ symbol....
+
+Find what index the @ is?
+
+even better - split list at the @ symbol...
+
+Return the string values using slicing before the at
+
+
+
+"""
+
+def username_from_email(email):
+    test = email.split("@")
+    return test[0]
+
+
+
+print(username_from_email("jay@gmail.com"))
