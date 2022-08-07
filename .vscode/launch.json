@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "test problem 57",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": [
+                "tests",
+                "tests.test_057"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
