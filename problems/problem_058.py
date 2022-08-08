@@ -53,13 +53,13 @@ def group_cities_by_state(cities):
     # create key/value pairs of the same state
     # loop thru list -> and group the same first entries
 
-# time to create key:value pairs
+
+# time to create key:value pairs -> to be later infilled with values
     unique_states = {} # dictionary of all the cities
     for state in large:
         unique_states[state[0]] = None
     
-    for i in range(len(large)):
-        pass
+    
     
     print(large)
     print(unique_states)    

@@ -19,6 +19,26 @@
 # at the last one you just wrote unless you really must.
 
 import math
+"""
+perim = 2pi*r
+pi = math.pi
+
+area = pi*r**2
+
+"""
 
 
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+        if radius <0:
+            raise ValueError
+
+    def calculate_perimeter(self):
+        return 2*math.pi*self.radius
+
+    def calculate_area(self):
+        return math.pi*self.radius**2
+
+    
 

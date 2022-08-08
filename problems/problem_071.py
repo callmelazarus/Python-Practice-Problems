@@ -26,3 +26,15 @@
 
 
 
+class Employee:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+
+    def get_fullname(self):
+        return f"{self.first} {self.last}"
+
+    def get_email(self):
+        lowerfirst = self.first.lower()
+        lowerlast = self.last.lower()
+        return f'{lowerfirst}.{lowerlast}@company.com'
