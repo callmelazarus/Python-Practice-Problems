@@ -30,3 +30,29 @@
 
     # method get_title(self)
         # returns "Title: " + self.title
+
+"""
+class practice
+SOLVED - 8/13/2022
+
+LESSON:
+don't forget the init function
+data types are retained in function call
+
+"""
+
+class Book:
+    def __init__(self, author, title):
+        self.author = author
+        self.title = title
+    
+    def get_author(self):
+        return "Author: " + self.author
+
+    def get_title(self):
+        return "Title: " + self.title
+
+book = Book("Natalie Zina Walschots", "Hench")
+
+print(book.get_author())  # prints "Author: Natalie Zina Walschots"
+print(book.get_title())   # prints "Title: Hench"

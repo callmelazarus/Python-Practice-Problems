@@ -37,3 +37,32 @@
             # return True
         # otherwise
             # return None
+"""
+class methods practice
+SOLVED - 8/13/2022
+
+LESSON:
+class methods - take in self (if you use the attributes, which you likely will....)
+and another argument
+"""
+class Person:
+    def __init__(self, name, hated_foods_list, loved_foods_list):
+        self.name = name
+        self.hated_foods_list = hated_foods_list
+        self.loved_foods_list = loved_foods_list
+
+    def taste(self, food):
+        if food in self.hated_foods_list:
+            return False
+        elif food in self.loved_foods_list:
+            return True
+        else:
+            return None
+
+person = Person("Malik",
+                ["cottage cheese", "sauerkraut"],
+                ["pizza", "schnitzel"])
+
+print(person.taste(food = "lasagna"))     # Prints None, not in either list
+print(person.taste("sauerkraut"))  # Prints False, in the hated list
+print(person.taste("pizza"))       # Prints True, in the loved list

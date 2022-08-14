@@ -37,8 +37,7 @@
         # the number of scores
 
 """
-
-
+class methods practice 
 SOLVED 8/8/2022
 
 LESSON: 
@@ -68,13 +67,13 @@ Joe.add_score(75)
 Joe.add_score(100)
 Joe.add_score(95)
 
-print(Joe.get_average())
+print(Joe.get_average()) # returns 88
 
 Ray = Student("Ray")
 
 Ray.add_score(90)
 
-print(Ray.get_average())
+print(Ray.get_average()) # returns 90
 
 
     # student.add_score(90)

@@ -33,3 +33,35 @@
 
     # method deposit(self, amount)
         # increases the balance by the amount
+"""
+class practice
+SOLVED - 8/13/2022
+
+LESSON:
+remember that if you are modifying an attribute, you need to assign the changes 
+to the original attribute
+self.balance + amount IS NOT self.balance = self.balance + amount
+"""
+
+
+class BankAccount:
+    def __init__(self, opening_balance):
+        self.balance = opening_balance
+
+    def get_balance(self):
+        return self.balance
+
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+
+    def withdraw(self, amount):
+        self.balance = self.balance - amount
+
+
+account = BankAccount(100)
+
+print(account.get_balance())  # prints 100
+account.withdraw(50)
+print(account.get_balance())  # prints 50
+account.deposit(120)
+print(account.get_balance())  # prints 170

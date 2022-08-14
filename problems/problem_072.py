@@ -28,3 +28,27 @@
 # at the last one you just wrote unless you really must.
 
 
+"""
+class practice 
+
+SOLVED - 8/13/2022
+
+LESSON:
+read instructions carefully
+"""
+
+
+class Person:
+    def __init__(self, name, hated_foods_list, loved_foods_list):
+        self.name = name
+        self.hated_foods_list = hated_foods_list
+        self.loved_foods_list = loved_foods_list
+    
+    def taste(self, food):
+        if food in self.loved_foods_list:
+            return True
+        elif food in self.hated_foods_list:
+            return False
+        else:
+            return None
+    

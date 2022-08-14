@@ -18,7 +18,12 @@
 #
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
+"""
+SOLVED - 8/8/2022
 
+LESSON:
+
+"""
 class Book:
     def __init__(self, author, title):
         self.author = author

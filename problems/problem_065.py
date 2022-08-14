@@ -26,6 +26,12 @@ challenge - need to be able to compare one list item, and take the difference wi
 save that difference in a particular variable
 replace that number if the new difference is bigger than the previous solution
 
+SOLVED - 8/8/2022
+
+LESSON:
+think about what the order in which you are defining operations within the loop you are doing. 
+You can redefine items outside of the loop, everytime you go thru a loop
+
 """
 
 def biggest_gap_with_range(list):

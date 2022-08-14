@@ -23,7 +23,14 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+"""
+class practice 
 
+SOLVED - 8/8/2022
+
+LESSON:
+literal f strings
+"""
 
 
 class Employee:
