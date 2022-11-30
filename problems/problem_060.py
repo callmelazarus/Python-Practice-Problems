@@ -13,3 +13,18 @@
 #     * input:   [1, 3, 5, 7]
 #       returns: [1, 3, 5, 7]
 
+"""
+returns only values that are odd
+
+
+"""
+
+
+def only_odds(list):
+    soln = []
+    for item in list:
+        if item%2 != 0:
+            soln.append(item)
+    return soln
+
+

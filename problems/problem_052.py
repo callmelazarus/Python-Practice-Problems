@@ -15,3 +15,26 @@
 #
 # https://docs.python.org/3/library/random.html
 
+
+from random import randint
+def generate_lottery_numbers():
+    soln = []
+    while len(soln) < 6:
+        new_num = randint(1,40)
+        if new_num not in soln:
+            soln.append(new_num)
+    print(soln)
+
+
+generate_lottery_numbers()
+
+"""
+=return -> 6 unique numbers, between 1 and 40
+
+create empty list
+
+fill in list with random variable if it is NOT in list
+
+
+
+"""

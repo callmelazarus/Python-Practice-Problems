@@ -18,8 +18,27 @@
 # Remember that functions can return more than one value
 # in Python. You just use a comma with the return, like
 # this:
-#      return value1, value2
+#      return value1, value2 (as a tuple)
 
 
 def count_letters_and_digits(s):
-    pass
+    count_letter = 0
+    count_number = 0
+    for digit in s:
+        if digit.isdigit()== True:
+            count_number += 1
+        elif digit.isalpha()== True:
+            count_letter += 1
+        else:
+            print("please resubmit string to include letter or number")
+    return count_letter, count_number
+
+
+print(count_letters_and_digits("123456789abc"))
+
+#solved
+
+#this will count the number of letters, and digits in a string that is input
+# seems like you are going to need to loop thru the string and inspect if that is letter or number...
+# first return is the letter
+# second return is the number

@@ -22,4 +22,34 @@
 #       result:  120
 #     * inputs:  10, "/", 12
 #       result:  0.8333333333333334
+"""
+calculator function -> 
 
+inputs -> number, operator, number
+
+challenge is turning the operator to the operation
+
+returns -> result of operation
+
+SOLVED 8/6/2022
+
+"""
+
+
+def basic_calculator(num1, operator, num2):
+    add = lambda num1, num2: num1 + num2
+    minus = lambda num1, num2: num1 - num2
+    multiply = lambda num1, num2: num1 * num2
+    divide = lambda num1, num2: num1 / num2
+    if operator == "+":
+        return add(num1,num2)
+    elif operator == "-":
+        return minus(num1,num2)
+    elif operator == "*":
+        return multiply(num1,num2)
+    elif operator == "/":
+        return divide(num1,num2)
+    else:
+        return "I can't deal with that operator"
+
+print(basic_calculator(2,"+",2))

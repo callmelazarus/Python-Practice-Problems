@@ -15,3 +15,15 @@
 #       parameter 2: 0
 #     returns: "92380"
 
+"""
+input - 2 numberes
+
+return -> string concatenated version of numbers
+
+
+"""
+def num_concat(num1, num2):
+    return str(num1) + str(num2)
+
+
+print(num_concat(3, 10))

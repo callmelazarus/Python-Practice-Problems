@@ -15,3 +15,19 @@
 #     and 7 into a list
 #   * Use random.choice to select one
 
+"""
+Generate a list of values
+
+SOLVED 8/6/2022
+"""
+
+from random import choice, randint, random
+
+def specific_random():
+    choice_list = []
+    for i in range(10,501):
+        if i%5 == 0 and i%7 == 0:
+            choice_list.append(i)
+    return choice(choice_list)
+
+

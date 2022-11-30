@@ -24,4 +24,29 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+    count_letters = 0
+    count_numbers = 0
+    for char in s:
+        if char.isdigit():
+            count_numbers += 1
+        elif char.isalpha():
+            count_letters += 1
+    return count_numbers, count_letters
+
+
+test = "11111a"
+
+print(count_letters_and_digits(test))
+
+
+# input - > string of letters and numbers
+
+# loop through string
+# see if letter is either num or letters
+#     letter.isdigit() -> True or False
+# need to add to counter if true
+# return the number of num and letters
+# first return is letters
+
+
+# output -> returnstwo values, num letters, and number of digits

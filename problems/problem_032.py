@@ -16,4 +16,21 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_numbers(limit):
-    pass
+    sum = 0
+    if limit < 0:
+        return None
+    elif limit == 0:
+        return 0
+    else:
+        for num in range(1, limit+1):
+            sum += num
+    return sum
+
+num = 5
+
+print(range(num+1))
+
+print(sum_of_first_n_numbers(num))
+
+# returns sum of numbers from 0 to the limit
+# seems like I will need to find a way to count integers from 0 to that number, and add them all up

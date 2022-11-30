@@ -16,4 +16,18 @@
 # problem to get a good feel for how to solve it.
 
 def fizzbuzz(number):
-    pass
+    if number % 3 == 0 and number % 5 == 0:
+        return "fizzbuzz"
+    elif number % 5 == 0:
+        return "buzz"
+    elif number % 3 == 0:
+        return "fizz"
+    return number
+
+x = 3
+y = 5
+z = 30
+a = 1
+
+print(fizzbuzz(x))
+

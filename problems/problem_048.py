@@ -26,3 +26,26 @@
             # counts[word] = 0
         # add one to counts[word]
     # return counts
+
+def count_word_frequencies(sentence):
+    words = sentence.split() # turns sentence into list, of individual words
+    counts = {}
+    for word in words:
+        if counts.get(word) == None: # if the word doesn't existin the dictionary....
+            counts[word] = 0 # adds that key to teh dictionary, and sets value to 0
+        counts[word] += 1 # how do I add to the value, of k/v pair
+    return counts
+
+sentence="I came I saw I learned"
+
+print(count_word_frequencies(sentence))
+
+
+emptdic = {
+    "test":"value1",
+ "test": "value2"
+ }
+
+# print(emptdic.get("test"))
+
+print(emptdic)

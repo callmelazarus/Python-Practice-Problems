@@ -17,3 +17,43 @@
 #
 # You may want to look at the built-in "abs" function
 
+"""
+input -> list with at least two numbers
+
+output -> largest gap between any two consecutive numbers in that same list
+
+challenge - need to be able to compare one list item, and take the difference with the previous number. 
+save that difference in a particular variable
+replace that number if the new difference is bigger than the previous solution
+
+SOLVED - 8/8/2022
+
+LESSON:
+think about what the order in which you are defining operations within the loop you are doing. 
+You can redefine items outside of the loop, everytime you go thru a loop
+
+"""
+
+def biggest_gap_with_range(list):
+    gap = 0
+    for item in range(len(list)):
+        gap_iteration = list[item] - list[item+1]
+        if gap_iteration > gap:
+            gap = gap_iteration
+    return gap
+
+
+
+def biggest_gap(list):
+    prev_number = list[0]
+    gap = 0
+    for number in list:
+        new_gap = abs(number-prev_number)
+        if new_gap > gap:
+            gap = new_gap
+        prev_number=number
+    return gap
+
+
+print(biggest_gap([1, 3, 100, 103, 106]))
+

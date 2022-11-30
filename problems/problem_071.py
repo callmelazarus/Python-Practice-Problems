@@ -23,6 +23,25 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+"""
+class practice 
+
+SOLVED - 8/8/2022
+
+LESSON:
+literal f strings
+"""
 
 
+class Employee:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
 
+    def get_fullname(self):
+        return f"{self.first} {self.last}"
+
+    def get_email(self):
+        lowerfirst = self.first.lower()
+        lowerlast = self.last.lower()
+        return f'{lowerfirst}.{lowerlast}@company.com'

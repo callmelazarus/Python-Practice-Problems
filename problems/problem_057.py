@@ -13,3 +13,19 @@
 #     * input:   3
 #       returns: 1/2 + 2/3 + 3/4
 
+"""
+return the sum of the fractions in the form number/number+1
+
+could use a for / range situation.... and add to empty list
+
+SOLVED 8/7/2022
+"""
+
+def sum_fraction_sequence(num):
+    soln = []
+    for i in range(num):
+        fractioned = str(i+1) + "/" + str(i+2)
+        soln.append(fractioned)
+    return soln
+
+print(sum_fraction_sequence(1))
